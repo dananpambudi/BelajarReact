@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "prettier/react",
+        "prettier"
+    ],
+    "parser": "babel-eslint",
+
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018 ,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react","prettier"
+    ],
+    "rules": {
+        "prettier/prettier":[
+            "error",
+            {
+                "bracketSpacing": true, 
+                "singleQuote": true,
+                "printWidth": 120,
+                "arrowParens": "always",
+                "semi": true,
+                "tabWidth": 2,
+                "jsxBracketSameLine":false
+            }
+        ],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-one-expression-per-line": "off",
+        "react/prefer-stateless-function":"off",
+        "jsx-a11y/label-has-associated-control":"off",
+        "react/prop-types":"off",
+        "max-classes-per-file":"off",
+        "react/destructuring-assignment":"off",
+        "react/no-access-state-in-setstate":"off",
+        "react/button-has-type":"off",
+        "react/no-array-index-key":"off",
+        "no-unused-vars":"warn"
+    }
+}
